@@ -25,6 +25,7 @@ Represents a selection control that combines a non-editable text box and a drop-
 
 Use a [ComboBox](combobox.md) to present a list of items that a user can select from. When the [ComboBox](combobox.md) is closed, it either displays the current selection or is empty if there is no selected item. When the [ComboBox](combobox.md) is open, it displays the list of selectable items. You can get or set the combo box's selected item by using the [SelectedItem](../windows.ui.xaml.controls.primitives/selector_selecteditem.md) property, and get or set the index of the selected item by using the [SelectedIndex](../windows.ui.xaml.controls.primitives/selector_selectedindex.md) property.
 
+
 You populate the [ComboBox](combobox.md) by adding objects directly to the [Items](itemscontrol_items.md) collection or by binding the [ItemsSource](itemscontrol_itemssource.md) property to a data source. Items added to the [ComboBox](combobox.md) are wrapped in [ComboBoxItem](comboboxitem.md) containers.
 
 
@@ -79,7 +80,8 @@ The following example demonstrates binding a [ComboBox](combobox.md) to a collec
 
 <!--{annotation author="jimwalk" time="7/15/2015 3:38:54 PM"}Auto snippets need to be updated for Windows 10.-->
 
-<!--<auto_snippet sample_id="ComboBoxBoundEx" snippet_id="1"/>-->```csharp
+<!--<auto_snippet sample_id="ComboBoxBoundEx" snippet_id="1"/>-->
+```csharp
 ObservableCollection<FontFamily> fonts = new ObservableCollection<FontFamily>();
 
 public MainPage()
@@ -89,7 +91,6 @@ public MainPage()
     fonts.Add(new FontFamily("Courier New"));
     fonts.Add(new FontFamily("Times New Roman"));
 }
-
 ```
 
 
